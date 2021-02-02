@@ -96,6 +96,12 @@ h6 {
   color: #fff;
   border: 0;
   transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-block {
+  display: block;
+  text-align: center;
 }
 
 .btn-primary {
@@ -158,6 +164,25 @@ h6 {
 .bg-secondary h2,
 .bg-secondary h3 {
   color: #fff;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.list li a {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.list li {
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+  padding: 0.5rem 0;
+}
+
+.list li a:hover {
+  color: var(--primary-color) !important;
 }
 
 /* Nav */
@@ -256,4 +281,55 @@ h6 {
 
 #home-articles .home-articles-container > *:last-child {
   grid-column: 2 / span 2;
+}
+
+.main-footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.main-footer-content > *:last-child {
+  grid-column: 1 / span 5;
+  background-color: #444;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.main-footer-content > *:first-child img {
+  width: 80%;
+}
+
+.main-footer-content input[type='text'],
+.main-footer-content input[type='submit'] {
+  height: 2rem;
+  outline: none;
+  width: 80%;
+  font-size: 1rem;
+  padding-left: 5px;
+  border: 0;
+}
+
+.main-footer-content input[type='submit'] {
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+/* About Page */
+.about-content {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 2rem;
+}
+
+.about-content > *:first-child {
+  grid-row: 1 / span 3;
+}
+
+.about-content > *:first-child h1 {
+  font-size: 2.5rem;
+}
+
+.about-content > *:last-child {
+  grid-auto-rows: 0fr;
 }
